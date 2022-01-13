@@ -8,20 +8,40 @@ TODO LIST:
 
 - [x] User Model
 - [x] User Controllers
-- [x] User Routes
+- [] User Routes 
+    -[x] (/api/users)
+        - [x] GET all users
+        - [x] GET single user by _id
+        - [x] POST new user
+            // example data
+                {
+                "username": "lernantino",
+                "email": "lernantino@gmail.com"
+                }
+        - [x] PUT update a user by _id
+        - [x] DELETE user by _id
+        - [] BONUS: remove user's associated thoughts when deleted
+    -[] (/api/users/:userId/friends/:friendId)
+        - [] POST add new friend to user's friend list
+        - [] DELETE remove friend from user's friend list
 
-- [] Thought Model
-- [] Thought Controllers
+- [x] Thought Model
+- [x] Reaction (Schema Only)
+- [x] dateFormat
+- [x] Thought Controllers
 - [] Thought Routes
-
-- [] Models
-    - [] User model { username, email, thoughts, friends }
-        - [] Schema settings: Create a virtual called friendCount that retrieves the length of the user's friends array field on query.
-    - [] Thought model { thoughtText, createdAt, username (user that created this thought), reactions }
-        - [] Schema settings: Create a virtual called reactionCount that retrieves the length of the thought's reactions array field on query.
-    - [] Reaction (SCHEMA ONLY) { reactionId, reactionBody, username, createdAt }
-        - [] Schema settings: This will not be a model, but rather will be used as the reaction field's subdocument schema in the Thought model.
-
-- [] Controllers
-
-- [] Routes
+    - [] (/api/thoughts)
+        - [] GET all thoughts
+        - [] GET single thought by _id
+        - [] POST create new thought (don't forget to push the created thought's _id to the associated user's thoughts array field)
+            // example data
+                {
+                "thoughtText": "Here's a cool thought...",
+                "username": "lernantino",
+                "userId": "5edff358a0fcb779aa7b118b"
+                }
+        - [] PUT update thought by _id
+        - [] DELETE remove thought by _id
+    - [] (/api/thoughts/:thoughtId/reactions)
+        - [] POST create reaction stored in single thought's reaction array field
+        - [] DELETE pull and remove a reaction by the reaction's reactionId value
