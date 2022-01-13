@@ -22,8 +22,8 @@ TODO LIST:
         - [x] DELETE user by _id
         - [] BONUS: remove user's associated thoughts when deleted
     -[] (/api/users/:userId/friends/:friendId)
-        - [] POST add new friend to user's friend list
-        - [] DELETE remove friend from user's friend list
+        - [x] POST add new friend to user's friend list
+        - [x] DELETE remove friend from user's friend list
 
 - [x] Thought Model
 - [x] Reaction (Schema Only)
@@ -41,8 +41,11 @@ TODO LIST:
                 "userId": "5edff358a0fcb779aa7b118b"
                 }
         - [x] PUT update thought by _id
-        - [x] DELETE remove thought by _id
-            **BUG** *"message": "No user found with this id!"*
+        - [] DELETE remove thought by _id
+            **BUG** 
+                *"message": "No user found with this id!"*
+            **SOLUTION** 
+                **??** *push the created thought's _id to the associated user's thoughts array field* 
     - [] (/api/thoughts/:thoughtId/reactions)
         - [] POST create reaction stored in single thought's reaction array field
         - [] DELETE pull and remove a reaction by the reaction's reactionId value
