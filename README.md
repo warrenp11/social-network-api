@@ -31,17 +31,18 @@ TODO LIST:
 - [x] Thought Controllers
 - [] Thought Routes
     - [] (/api/thoughts)
-        - [] GET all thoughts
-        - [] GET single thought by _id
-        - [] POST create new thought (don't forget to push the created thought's _id to the associated user's thoughts array field)
+        - [x] GET all thoughts
+        - [x] GET single thought by _id
+        - [x] POST create new thought (don't forget to push the created thought's _id to the associated user's thoughts array field)
             // example data
                 {
                 "thoughtText": "Here's a cool thought...",
                 "username": "lernantino",
                 "userId": "5edff358a0fcb779aa7b118b"
                 }
-        - [] PUT update thought by _id
+        - [x] PUT update thought by _id
         - [] DELETE remove thought by _id
+            *Delete not functioning*
     - [] (/api/thoughts/:thoughtId/reactions)
         - [] POST create reaction stored in single thought's reaction array field
         - [] DELETE pull and remove a reaction by the reaction's reactionId value
