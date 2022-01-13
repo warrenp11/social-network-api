@@ -21,7 +21,7 @@ TODO LIST:
         - [x] PUT update a user by _id
         - [x] DELETE user by _id
         - [] BONUS: remove user's associated thoughts when deleted
-    -[] (/api/users/:userId/friends/:friendId)
+    -[x] (/api/users/:userId/friends/:friendId)
         - [x] POST add new friend to user's friend list
         - [x] DELETE remove friend from user's friend list
 
@@ -47,5 +47,7 @@ TODO LIST:
             **SOLUTION** 
                 **??** *push the created thought's _id to the associated user's thoughts array field* 
     - [] (/api/thoughts/:thoughtId/reactions)
-        - [] POST create reaction stored in single thought's reaction array field
+        - [x] POST create reaction stored in single thought's reaction array field
         - [] DELETE pull and remove a reaction by the reaction's reactionId value
+            **BUG**
+                *reactions wont delete*
