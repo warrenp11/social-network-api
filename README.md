@@ -41,8 +41,8 @@ TODO LIST:
                 "userId": "5edff358a0fcb779aa7b118b"
                 }
         - [x] PUT update thought by _id
-        - [] DELETE remove thought by _id
-            *Delete not functioning*
+        - [x] DELETE remove thought by _id
+            **BUG** *"message": "No user found with this id!"*
     - [] (/api/thoughts/:thoughtId/reactions)
         - [] POST create reaction stored in single thought's reaction array field
         - [] DELETE pull and remove a reaction by the reaction's reactionId value
