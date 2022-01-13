@@ -46,6 +46,10 @@ TODO LIST:
                 *"message": "No user found with this id!"*
             **SOLUTION** 
                 **??** *push the created thought's _id to the associated user's thoughts array field* 
-    - [] (/api/thoughts/:thoughtId/reactions)
+    - [x] (/api/thoughts/:thoughtId/reactions)
         - [x] POST create reaction stored in single thought's reaction array field
         - [x] DELETE pull and remove a reaction by the reaction's reactionId value
+
+
+- [] Record application routes via Insomnia
+- [] README.md
