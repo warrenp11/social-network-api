@@ -6,6 +6,14 @@ TODO LIST:
 
 - [x] Connect to server
 
+- [x] User Model
+- [x] User Controllers
+- [x] User Routes
+
+- [] Thought Model
+- [] Thought Controllers
+- [] Thought Routes
+
 - [] Models
     - [] User model { username, email, thoughts, friends }
         - [] Schema settings: Create a virtual called friendCount that retrieves the length of the user's friends array field on query.
@@ -17,7 +25,3 @@ TODO LIST:
 - [] Controllers
 
 - [] Routes
-
-- [] 
-
-- [] 
