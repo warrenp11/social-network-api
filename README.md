@@ -35,10 +35,10 @@ No starter code was provided for this assignment.
         THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 ## Walkthrough Videos
-[User Routes]()  
-[Friend Routes]()  
-[Thought Routes]()  
-[Reaction Routes]()  
+[User Routes](https://watch.screencastify.com/v/3CCsrEpltoGwEdov9H3j)  
+[Friend Routes](https://watch.screencastify.com/v/srtCyjRh5zRqgvOmCOX2)  
+[Thought Routes](https://watch.screencastify.com/v/MK5q4S2EGtMIyulhrMii)  
+[Reaction Routes](https://watch.screencastify.com/v/4AVuDEeSaYCTb6QOYwcg)  
 
 ## Installation
 **NOTE: You must have mongoDB installed locally before installing this repo.** </br>
@@ -56,8 +56,7 @@ No starter code was provided for this assignment.
 5. Open Insomnia Core to test API routes
 
 ## Tests
-Testing restful API calls with Insomnia Core. </br>
-The following tests use a URL beginning  with `localhost:3001/` followed by the corresponding API call </br></br>
+Testing the restful API calls was done with Insomnia Core. The following tests use a URL beginning with `localhost:3001/` followed by the corresponding API call. </br></br>
 
 (You can also view to the walkthrough videos for reference) 
 
@@ -118,6 +117,8 @@ The following tests use a URL beginning  with `localhost:3001/` followed by the 
 [MonogDB](https://www.mongodb.com/)
 
 [Mongoose](https://mongoosejs.com/)
+
+## Project Insight
 
 ## Questions
 If you have any questions about this project contact me directly at warrenp11@gmail.com. 
